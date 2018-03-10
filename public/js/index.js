@@ -18,6 +18,13 @@ socket.on('disconnect', function() {
   console.log('Disconnected from server');
 });
 
+socket.on('welcomeMessage', function(message){
+  console.log('welcomeMessage', message);
+});
+
+socket.on('welcomeMessageAll', function(message) {
+  console.log('welcomeMessageAll', message);
+})
 
 socket.on('newMessage', function(message){
   console.log('newMessage', message);
